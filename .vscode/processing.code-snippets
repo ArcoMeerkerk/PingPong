@@ -1,0 +1,293 @@
+{
+	"draw": {
+		"prefix": ["draw"],
+		"body": ["def draw():\n\t"],
+		"description": "The draw() function is repeatedly invoked until the program is stopped."
+	},
+	"setup": {
+		"prefix": ["setup"],
+		"body": ["def setup():\n\t"],
+		"description": "The setup() function is called once when the program starts."
+	},
+
+	"arc": {
+		"prefix": ["arc"],
+		"body": ["arc(${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:startAngle}, ${6:stopAngle})"],
+		"description": "Draws an arc to the screen."
+	},
+	"circle": {
+		"prefix": ["circle"],
+		"body": ["circle(${1:x}, ${2:y}, ${3:radius})"],
+		"description": "Draws a circle to the screen."
+	},
+	"ellipse": {
+		"prefix": ["ellipse"],
+		"body": ["ellipse(${1:x}, ${2:y}, ${3:width}, ${4:height})"],
+		"description": "Draws an ellipse (oval) to the screen."
+	},
+	"line": {
+		"prefix": ["line"],
+		"body": ["line(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2})"],
+		"description": "Draws a line (a direct path between two points) to the screen."
+	},
+	"point": {
+		"prefix": ["point"],
+		"body": ["point(${1:x}, ${2:y})"],
+		"description": "Draws a point to the screen."
+	},
+	"quad": {
+		"prefix": ["quad"],
+		"body": ["quad(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:x4}, ${8:y4})"],
+		"description": "Draws a four sided polygon to the screen."
+	},
+	"rect": {
+		"prefix": ["rect"],
+		"body": ["rect(${1:x}, ${2:y}, ${3:width}, ${4:height})"],
+		"description": "Draws a rect to the screen."
+	},
+	"square": {
+		"prefix": ["square"],
+		"body": ["square(${1:x}, ${2:y}, ${3:extent})"],
+		"description": "Draws a square to the screen."
+	},
+	"triangle": {
+		"prefix": ["triangle"],
+		"body": ["triangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3})"],
+		"description": "Draws a triangle to the screen."
+	},
+
+	"background": {
+		"prefix": ["background"],
+		"body": ["background(${1:red}, ${2:green}, ${3:blue})"],
+		"description": "The background() function sets the color used for the background of the Processing window."
+	},
+	"colorMode": {
+		"prefix": ["colorMode"],
+		"body": ["triangle(${1:mode})"],
+		"description": "Changes the way Processing interprets color data."
+	},
+	"fill": {
+		"prefix": ["fill"],
+		"body": ["fill(${1:red}, ${2:green}, ${3:blue})"],
+		"description": "Sets the color used to fill shapes."
+	},
+	"noFill": {
+		"prefix": ["noFill"],
+		"body": ["noFill()"],
+		"description": "Disables filling geometry."
+	},
+	"noStroke": {
+		"prefix": ["noStroke"],
+		"body": ["noStroke()"],
+		"description": "Disables drawing the stroke (outline)."
+	},
+	"stroke": {
+		"prefix": ["stroke"],
+		"body": ["stroke(${1:red}, ${2:green}, ${3:blue})"],
+		"description": "Sets the color used to draw lines and borders around shapes."
+	},
+
+	"color": {
+		"prefix": ["color"],
+		"body": ["color(${1:red}, ${2:green}, ${3:blue})"],
+		"description": "Creates colors for storing in variables of the color datatype."
+	},
+
+	"createImage": {
+		"prefix": ["createImage"],
+		"body": ["createImage(${1:width}, ${2:height}, ${3:format})"],
+		"description": "Creates a new PImage (the datatype for storing images)."
+	},
+
+	"ellipseMode": {
+		"prefix": ["ellipseMode"],
+		"body": ["ellipseMode(${1:mode})"],
+		"description": "Modifies the location from which ellipses are drawn by changing the way in which parameters given to ellipse() are intepreted."
+	},
+	"noSmooth": {
+		"prefix": ["noSmooth"],
+		"body": ["noSmooth()"],
+		"description": "Draws all geometry with jagged (aliased) edges."
+	},
+	"rectMode": {
+		"prefix": ["rectMode"],
+		"body": ["rectMode(${1:mode})"],
+		"description": "Modifies the location from which rectangles are drawn by changing the way in which parameters given to rect() are intepreted."
+	},
+	"smooth": {
+		"prefix": ["smooth"],
+		"body": ["smooth(${1:level})"],
+		"description": "Draws all geometry with smooth (anti-aliased) edges. smooth() will also improve image quality of resized images. "
+	},
+	"strokeCap": {
+		"prefix": ["strokeCap"],
+		"body": ["strokeCap(${1:mode})"],
+		"description": "Sets the style for rendering line endings."
+	},
+	"strokeJoin": {
+		"prefix": ["strokeJoin"],
+		"body": ["strokeJoin(${1:mode})"],
+		"description": "Sets the style of the joints which connect line segments."
+	},
+	"strokeWeight": {
+		"prefix": ["strokeWeight"],
+		"body": ["strokeWeight(${1:weight})"],
+		"description": "Sets the width of the stroke used for lines, points, and the border around shapes."
+	},
+
+	"image": {
+		"prefix": ["image"],
+		"body": ["image(${1:image}, ${1:x}, ${1:y}, ${1:width}, ${1:height})"],
+		"description": "The image() function draws an image to the display window."
+	},
+	"imageMode": {
+		"prefix": ["stimageModerokeWeight"],
+		"body": ["imageMode(${1:mode})"],
+		"description": "Modifies the location from which images are drawn by changing the way in which parameters given to image() are intepreted."
+	},
+	"loadImage": {
+		"prefix": ["loadImage"],
+		"body": ["loadImage(${1:filename})"],
+		"description": "Loads an image into a variable of type PImage."
+	},
+
+	"cursor": {
+		"prefix": ["cursor"],
+		"body": ["cursor(${1:kind})"],
+		"description": "Sets the cursor to a predefined symbol or an image, or makes it visible if already hidden."
+	},
+
+	"displayHeight": {
+		"prefix": ["displayHeight"],
+		"body": ["displayHeight"],
+		"description": "System variable that stores the height of the entire screen display."
+	},
+	"displayWidth": {
+		"prefix": ["displayWidth"],
+		"body": ["displayWidth"],
+		"description": "System variable that stores the width of the entire screen display."
+	},
+
+	"focused": {
+		"prefix": ["focused"],
+		"body": ["focused"],
+		"description": "Confirms if a Processing program is 'focused,' meaning that it is active and will accept mouse or keyboard input."
+	},
+	"frameRate": {
+		"prefix": ["frameRate"],
+		"body": ["frameRate"],
+		"description": "The system variable frameRate contains the approximate frame rate of a running sketch."
+	},
+	"frameRate()": {
+		"prefix": ["frameRate()"],
+		"body": ["frameRate(${1:fps})"],
+		"description": "Specifies the number of frames to be displayed every second."
+	},
+	"fullScreen": {
+		"prefix": ["fullScreen"],
+		"body": ["fullScreen()"],
+		"description": "This function opens a sketch using the full size of the computer's display."
+	},
+	"height": {
+		"prefix": ["height"],
+		"body": ["height"],
+		"description": "System variable that stores the height of the display window."
+	},
+	"noCursor": {
+		"prefix": ["noCursor"],
+		"body": ["noCursor()"],
+		"description": "Hides the cursor from view."
+	},
+	"size": {
+		"prefix": ["size"],
+		"body": ["size(${1:width}, ${2:height})"],
+		"description": "Defines the dimension of the display window width and height in units of pixels."
+	},
+	"width": {
+		"prefix": ["width"],
+		"body": ["width"],
+		"description": "System variable that stores the width of the display window."
+	},
+
+	"mouseButton": {
+		"prefix": ["mouseButton"],
+		"body": ["mouseButton"],
+		"description": "When a mouse button is pressed, the value of the system variable mouseButton is set to either LEFT, RIGHT, or CENTER, depending on which button is pressed."
+	},
+	"mouseClicked": {
+		"prefix": ["mouseClicked"],
+		"body": ["def mouseClicked(event):\n\t"],
+		"description": "The mouseClicked() function is called after a mouse button has been pressed and then released."
+	},
+	"mouseDragged": {
+		"prefix": ["mouseDragged"],
+		"body": ["def mouseDragged(event):\n\t"],
+		"description": "The mouseDragged() function is called once every time the mouse moves while a mouse button is pressed."
+	},
+	"mouseMoved": {
+		"prefix": ["mouseMoved"],
+		"body": ["def mouseMoved(event):\n\t"],
+		"description": "The mouseMoved() function is called every time the mouse moves and a mouse button is not pressed."
+	},
+	"mousePressed": {
+		"prefix": ["mousePressed"],
+		"body": ["mousePressed"],
+		"description": "The mousePressed variable stores whether or not a mouse button is currently being pressed."
+	},
+	"mousePressed()": {
+		"prefix": ["mousePressed"],
+		"body": ["def mouseMoved(event):\n\t"],
+		"description": "The mousePressed() function is called once after every time a mouse button is pressed."
+	},
+	"mouseReleased": {
+		"prefix": ["mouseReleased"],
+		"body": ["def mouseReleased(event):\n\t"],
+		"description": "The mouseReleased() function is called every time a mouse button is released."
+	},
+	"mouseWheel": {
+		"prefix": ["mouseWheel"],
+		"body": ["def mouseWheel(event):\n\t"],
+		"description": "The mouseWheel() function returns positive values when the mouse wheel is rotated down (toward the user), and negative values for the other direction (up or away from the user)."
+	},
+	"mouseX": {
+		"prefix": ["mouseX"],
+		"body": ["mouseX"],
+		"description": "The system variable mouseX always contains the current horizontal coordinate of the mouse."
+	},
+	"mouseY": {
+		"prefix": ["mouseY"],
+		"body": ["mouseY"],
+		"description": "The system variable mouseY always contains the current vertical coordinate of the mouse."
+	},
+
+	"key": {
+		"prefix": ["key"],
+		"body": ["key"],
+		"description": "The system variable key always contains the value of the most recent key on the keyboard that was used (either pressed or released)."
+	},
+	"keyCode": {
+		"prefix": ["keyCode"],
+		"body": ["keyCode"],
+		"description": "The variable keyCode is used to detect special keys such as the UP, DOWN, LEFT, RIGHT arrow keys and ALT, CONTROL, SHIFT."
+	},
+	"keyPressed": {
+		"prefix": ["keyPressed"],
+		"body": ["keyPressed"],
+		"description": "The Boolean system variable keyPressed is True if any key is pressed and False if no keys are pressed."
+	},
+	"keyPressed()": {
+		"prefix": ["keyPressed"],
+		"body": ["def keyPressed(event):\n\t"],
+		"description": "The keyPressed() function is called once every time a key is pressed. "
+	},
+	"keyReleased": {
+		"prefix": ["keyReleased"],
+		"body": ["def keyReleased(event):\n\t"],
+		"description": "The keyReleased() function is called once every time a key is released."
+	},
+	"keyTyped": {
+		"prefix": ["keyTyped"],
+		"body": ["def keyTyped(event):\n\t"],
+		"description": "The keyTyped() function is called once every time a key is pressed, but action keys such as Ctrl, Shift, and Alt are ignored."
+	},
+}

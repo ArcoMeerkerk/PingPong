@@ -1,0 +1,13 @@
+{
+    "code-runner.customCommand": "java -jar processing-py.jar main.py",
+    "python.linting.enabled": false,
+    "files.associations": {
+        "*.py": "python",
+        "*.pyde": "python",
+        "*.pde": "python"
+    },
+    "files.exclude": {
+        "*.class": true,
+        "processing-py.jar": true
+    }
+}
